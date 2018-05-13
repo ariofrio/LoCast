@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9033B353D0DA9E33579DFB0F /* Pods_LoCastUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35DB7296C2AF799AE60BBD65 /* Pods_LoCastUITests.framework */; };
+		920C9FA220A7DA7C0041ED05 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 920C9FA120A7DA7C0041ED05 /* Podfile */; };
+		920C9FA420A7DAA80041ED05 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 920C9FA320A7DAA80041ED05 /* GoogleService-Info.plist */; };
+		920C9FA620A7F4B90041ED05 /* LocationManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920C9FA520A7F4B90041ED05 /* LocationManagerDelegate.swift */; };
 		9234684520A7CDE600D9AC35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9234684420A7CDE600D9AC35 /* AppDelegate.swift */; };
 		9234684720A7CDE600D9AC35 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9234684620A7CDE600D9AC35 /* ViewController.swift */; };
 		9234684A20A7CDE600D9AC35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9234684820A7CDE600D9AC35 /* Main.storyboard */; };
@@ -15,6 +19,8 @@
 		9234685220A7CDE800D9AC35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9234685020A7CDE800D9AC35 /* LaunchScreen.storyboard */; };
 		9234685D20A7CDE800D9AC35 /* LoCastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9234685C20A7CDE800D9AC35 /* LoCastTests.swift */; };
 		9234686820A7CDE800D9AC35 /* LoCastUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9234686720A7CDE800D9AC35 /* LoCastUITests.swift */; };
+		C255B452132DEE32C42CF835 /* Pods_LoCast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D68DADF37235033E82BAFAD /* Pods_LoCast.framework */; };
+		F87D9F09C1D349CE2C7789C4 /* Pods_LoCastTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF69BCEA65C3509501116CF8 /* Pods_LoCastTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +41,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0685F2FDBBF8D59120CAF6C5 /* Pods-LoCastUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoCastUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LoCastUITests/Pods-LoCastUITests.release.xcconfig"; sourceTree = "<group>"; };
+		0B2FABF966623F5E3541823E /* Pods-LoCastTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoCastTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LoCastTests/Pods-LoCastTests.debug.xcconfig"; sourceTree = "<group>"; };
+		15B93FFC5D2D3E707705EEC3 /* Pods-LoCastUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoCastUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LoCastUITests/Pods-LoCastUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1EAA336B22D5E60B2E34C6F5 /* Pods-LoCast.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoCast.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LoCast/Pods-LoCast.debug.xcconfig"; sourceTree = "<group>"; };
+		35DB7296C2AF799AE60BBD65 /* Pods_LoCastUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoCastUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D68DADF37235033E82BAFAD /* Pods_LoCast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoCast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		770F8F138AA4C1B4A3EE75DF /* Pods-LoCastTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoCastTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LoCastTests/Pods-LoCastTests.release.xcconfig"; sourceTree = "<group>"; };
+		8838F60A1F475B86A6038DFD /* Pods-LoCast.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoCast.release.xcconfig"; path = "Pods/Target Support Files/Pods-LoCast/Pods-LoCast.release.xcconfig"; sourceTree = "<group>"; };
+		920C9FA120A7DA7C0041ED05 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		920C9FA320A7DAA80041ED05 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		920C9FA520A7F4B90041ED05 /* LocationManagerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManagerDelegate.swift; sourceTree = "<group>"; };
 		9234684120A7CDE600D9AC35 /* LoCast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoCast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9234684420A7CDE600D9AC35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9234684620A7CDE600D9AC35 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +66,7 @@
 		9234686320A7CDE800D9AC35 /* LoCastUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoCastUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9234686720A7CDE800D9AC35 /* LoCastUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoCastUITests.swift; sourceTree = "<group>"; };
 		9234686920A7CDE800D9AC35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF69BCEA65C3509501116CF8 /* Pods_LoCastTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoCastTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C255B452132DEE32C42CF835 /* Pods_LoCast.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F87D9F09C1D349CE2C7789C4 /* Pods_LoCastTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,19 +90,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9033B353D0DA9E33579DFB0F /* Pods_LoCastUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		68CB1A63C88AF55246BF7C5D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1EAA336B22D5E60B2E34C6F5 /* Pods-LoCast.debug.xcconfig */,
+				8838F60A1F475B86A6038DFD /* Pods-LoCast.release.xcconfig */,
+				0B2FABF966623F5E3541823E /* Pods-LoCastTests.debug.xcconfig */,
+				770F8F138AA4C1B4A3EE75DF /* Pods-LoCastTests.release.xcconfig */,
+				15B93FFC5D2D3E707705EEC3 /* Pods-LoCastUITests.debug.xcconfig */,
+				0685F2FDBBF8D59120CAF6C5 /* Pods-LoCastUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		9234683820A7CDE600D9AC35 = {
 			isa = PBXGroup;
 			children = (
+				920C9FA320A7DAA80041ED05 /* GoogleService-Info.plist */,
+				920C9FA120A7DA7C0041ED05 /* Podfile */,
 				9234684320A7CDE600D9AC35 /* LoCast */,
 				9234685B20A7CDE800D9AC35 /* LoCastTests */,
 				9234686620A7CDE800D9AC35 /* LoCastUITests */,
 				9234684220A7CDE600D9AC35 /* Products */,
+				68CB1A63C88AF55246BF7C5D /* Pods */,
+				CA0FFE93B0E91765D97BA4F7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				9234684420A7CDE600D9AC35 /* AppDelegate.swift */,
+				920C9FA520A7F4B90041ED05 /* LocationManagerDelegate.swift */,
 				9234684620A7CDE600D9AC35 /* ViewController.swift */,
 				9234684820A7CDE600D9AC35 /* Main.storyboard */,
 				9234684E20A7CDE800D9AC35 /* Assets.xcassets */,
@@ -128,6 +167,16 @@
 			path = LoCastUITests;
 			sourceTree = "<group>";
 		};
+		CA0FFE93B0E91765D97BA4F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5D68DADF37235033E82BAFAD /* Pods_LoCast.framework */,
+				DF69BCEA65C3509501116CF8 /* Pods_LoCastTests.framework */,
+				35DB7296C2AF799AE60BBD65 /* Pods_LoCastUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +184,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9234686C20A7CDE800D9AC35 /* Build configuration list for PBXNativeTarget "LoCast" */;
 			buildPhases = (
+				72D77C58F7DD336EC546DC61 /* [CP] Check Pods Manifest.lock */,
 				9234683D20A7CDE600D9AC35 /* Sources */,
 				9234683E20A7CDE600D9AC35 /* Frameworks */,
 				9234683F20A7CDE600D9AC35 /* Resources */,
+				25B99236EEC1EC76D2E8AAE1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +203,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9234686F20A7CDE800D9AC35 /* Build configuration list for PBXNativeTarget "LoCastTests" */;
 			buildPhases = (
+				369BD6F19014F63B0536003B /* [CP] Check Pods Manifest.lock */,
 				9234685420A7CDE800D9AC35 /* Sources */,
 				9234685520A7CDE800D9AC35 /* Frameworks */,
 				9234685620A7CDE800D9AC35 /* Resources */,
@@ -170,6 +222,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9234687220A7CDE800D9AC35 /* Build configuration list for PBXNativeTarget "LoCastUITests" */;
 			buildPhases = (
+				6276CC2E7B91AFF69249037F /* [CP] Check Pods Manifest.lock */,
 				9234685F20A7CDE800D9AC35 /* Sources */,
 				9234686020A7CDE800D9AC35 /* Frameworks */,
 				9234686120A7CDE800D9AC35 /* Resources */,
@@ -232,7 +285,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				920C9FA220A7DA7C0041ED05 /* Podfile in Resources */,
 				9234685220A7CDE800D9AC35 /* LaunchScreen.storyboard in Resources */,
+				920C9FA420A7DAA80041ED05 /* GoogleService-Info.plist in Resources */,
 				9234684F20A7CDE800D9AC35 /* Assets.xcassets in Resources */,
 				9234684A20A7CDE600D9AC35 /* Main.storyboard in Resources */,
 			);
@@ -254,12 +309,92 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		25B99236EEC1EC76D2E8AAE1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LoCast/Pods-LoCast-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LoCast/Pods-LoCast-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		369BD6F19014F63B0536003B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LoCastTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6276CC2E7B91AFF69249037F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LoCastUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		72D77C58F7DD336EC546DC61 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LoCast-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9234683D20A7CDE600D9AC35 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				9234684720A7CDE600D9AC35 /* ViewController.swift in Sources */,
+				920C9FA620A7F4B90041ED05 /* LocationManagerDelegate.swift in Sources */,
 				9234684D20A7CDE600D9AC35 /* LoCast.xcdatamodeld in Sources */,
 				9234684520A7CDE600D9AC35 /* AppDelegate.swift in Sources */,
 			);
@@ -432,6 +567,7 @@
 		};
 		9234686D20A7CDE800D9AC35 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1EAA336B22D5E60B2E34C6F5 /* Pods-LoCast.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -449,6 +585,7 @@
 		};
 		9234686E20A7CDE800D9AC35 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8838F60A1F475B86A6038DFD /* Pods-LoCast.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -466,6 +603,7 @@
 		};
 		9234687020A7CDE800D9AC35 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B2FABF966623F5E3541823E /* Pods-LoCastTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -486,6 +624,7 @@
 		};
 		9234687120A7CDE800D9AC35 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 770F8F138AA4C1B4A3EE75DF /* Pods-LoCastTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -506,6 +645,7 @@
 		};
 		9234687320A7CDE800D9AC35 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15B93FFC5D2D3E707705EEC3 /* Pods-LoCastUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -525,6 +665,7 @@
 		};
 		9234687420A7CDE800D9AC35 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0685F2FDBBF8D59120CAF6C5 /* Pods-LoCastUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>617060565207-7nh2vum5tp56c8ftihddktu56cbos1ch.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.617060565207-7nh2vum5tp56c8ftihddktu56cbos1ch</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAy2f2a_Yjq2OjumR-0AGjboFP07bATR0o</string>
+	<key>GCM_SENDER_ID</key>
+	<string>617060565207</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.andresriofrio.locast</string>
+	<key>PROJECT_ID</key>
+	<string>locast-19c24</string>
+	<key>STORAGE_BUCKET</key>
+	<string>locast-19c24.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:617060565207:ios:ccfd9fe1a49ab00b</string>
+	<key>DATABASE_URL</key>
+	<string>https://locast-19c24.firebaseio.com</string>
+</dict>
+</plist>

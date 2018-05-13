@@ -7,19 +7,30 @@
 //
 
 import UIKit
+import PromiseKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var broadcastSwitch: UISwitch!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func changeBroadcastStatus(_ sender: Any) {
+        if broadcastSwitch.isOn {
+            firstly {
+                LocationManagerDelegate.shared.requestStartUpdatingLocation(
+                    viewControllerToPresent: self, inBackground: false)
+            }.done { success in
+                if !success {
+                    self.broadcastSwitch.isOn = false
+                }
+            }
+        } else {
+            // TODO
+        }
     }
-
 
 }
 
