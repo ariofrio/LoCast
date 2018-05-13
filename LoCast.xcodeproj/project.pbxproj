@@ -1,0 +1,600 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9234684520A7CDE600D9AC35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9234684420A7CDE600D9AC35 /* AppDelegate.swift */; };
+		9234684720A7CDE600D9AC35 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9234684620A7CDE600D9AC35 /* ViewController.swift */; };
+		9234684A20A7CDE600D9AC35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9234684820A7CDE600D9AC35 /* Main.storyboard */; };
+		9234684D20A7CDE600D9AC35 /* LoCast.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9234684B20A7CDE600D9AC35 /* LoCast.xcdatamodeld */; };
+		9234684F20A7CDE800D9AC35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9234684E20A7CDE800D9AC35 /* Assets.xcassets */; };
+		9234685220A7CDE800D9AC35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9234685020A7CDE800D9AC35 /* LaunchScreen.storyboard */; };
+		9234685D20A7CDE800D9AC35 /* LoCastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9234685C20A7CDE800D9AC35 /* LoCastTests.swift */; };
+		9234686820A7CDE800D9AC35 /* LoCastUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9234686720A7CDE800D9AC35 /* LoCastUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9234685920A7CDE800D9AC35 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9234683920A7CDE600D9AC35 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9234684020A7CDE600D9AC35;
+			remoteInfo = LoCast;
+		};
+		9234686420A7CDE800D9AC35 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9234683920A7CDE600D9AC35 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9234684020A7CDE600D9AC35;
+			remoteInfo = LoCast;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9234684120A7CDE600D9AC35 /* LoCast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoCast.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9234684420A7CDE600D9AC35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9234684620A7CDE600D9AC35 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9234684920A7CDE600D9AC35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9234684C20A7CDE600D9AC35 /* LoCast.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LoCast.xcdatamodel; sourceTree = "<group>"; };
+		9234684E20A7CDE800D9AC35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9234685120A7CDE800D9AC35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9234685320A7CDE800D9AC35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9234685820A7CDE800D9AC35 /* LoCastTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoCastTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9234685C20A7CDE800D9AC35 /* LoCastTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoCastTests.swift; sourceTree = "<group>"; };
+		9234685E20A7CDE800D9AC35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9234686320A7CDE800D9AC35 /* LoCastUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoCastUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9234686720A7CDE800D9AC35 /* LoCastUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoCastUITests.swift; sourceTree = "<group>"; };
+		9234686920A7CDE800D9AC35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9234683E20A7CDE600D9AC35 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9234685520A7CDE800D9AC35 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9234686020A7CDE800D9AC35 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9234683820A7CDE600D9AC35 = {
+			isa = PBXGroup;
+			children = (
+				9234684320A7CDE600D9AC35 /* LoCast */,
+				9234685B20A7CDE800D9AC35 /* LoCastTests */,
+				9234686620A7CDE800D9AC35 /* LoCastUITests */,
+				9234684220A7CDE600D9AC35 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9234684220A7CDE600D9AC35 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9234684120A7CDE600D9AC35 /* LoCast.app */,
+				9234685820A7CDE800D9AC35 /* LoCastTests.xctest */,
+				9234686320A7CDE800D9AC35 /* LoCastUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9234684320A7CDE600D9AC35 /* LoCast */ = {
+			isa = PBXGroup;
+			children = (
+				9234684420A7CDE600D9AC35 /* AppDelegate.swift */,
+				9234684620A7CDE600D9AC35 /* ViewController.swift */,
+				9234684820A7CDE600D9AC35 /* Main.storyboard */,
+				9234684E20A7CDE800D9AC35 /* Assets.xcassets */,
+				9234685020A7CDE800D9AC35 /* LaunchScreen.storyboard */,
+				9234685320A7CDE800D9AC35 /* Info.plist */,
+				9234684B20A7CDE600D9AC35 /* LoCast.xcdatamodeld */,
+			);
+			path = LoCast;
+			sourceTree = "<group>";
+		};
+		9234685B20A7CDE800D9AC35 /* LoCastTests */ = {
+			isa = PBXGroup;
+			children = (
+				9234685C20A7CDE800D9AC35 /* LoCastTests.swift */,
+				9234685E20A7CDE800D9AC35 /* Info.plist */,
+			);
+			path = LoCastTests;
+			sourceTree = "<group>";
+		};
+		9234686620A7CDE800D9AC35 /* LoCastUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9234686720A7CDE800D9AC35 /* LoCastUITests.swift */,
+				9234686920A7CDE800D9AC35 /* Info.plist */,
+			);
+			path = LoCastUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9234684020A7CDE600D9AC35 /* LoCast */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9234686C20A7CDE800D9AC35 /* Build configuration list for PBXNativeTarget "LoCast" */;
+			buildPhases = (
+				9234683D20A7CDE600D9AC35 /* Sources */,
+				9234683E20A7CDE600D9AC35 /* Frameworks */,
+				9234683F20A7CDE600D9AC35 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LoCast;
+			productName = LoCast;
+			productReference = 9234684120A7CDE600D9AC35 /* LoCast.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9234685720A7CDE800D9AC35 /* LoCastTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9234686F20A7CDE800D9AC35 /* Build configuration list for PBXNativeTarget "LoCastTests" */;
+			buildPhases = (
+				9234685420A7CDE800D9AC35 /* Sources */,
+				9234685520A7CDE800D9AC35 /* Frameworks */,
+				9234685620A7CDE800D9AC35 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9234685A20A7CDE800D9AC35 /* PBXTargetDependency */,
+			);
+			name = LoCastTests;
+			productName = LoCastTests;
+			productReference = 9234685820A7CDE800D9AC35 /* LoCastTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9234686220A7CDE800D9AC35 /* LoCastUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9234687220A7CDE800D9AC35 /* Build configuration list for PBXNativeTarget "LoCastUITests" */;
+			buildPhases = (
+				9234685F20A7CDE800D9AC35 /* Sources */,
+				9234686020A7CDE800D9AC35 /* Frameworks */,
+				9234686120A7CDE800D9AC35 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9234686520A7CDE800D9AC35 /* PBXTargetDependency */,
+			);
+			name = LoCastUITests;
+			productName = LoCastUITests;
+			productReference = 9234686320A7CDE800D9AC35 /* LoCastUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9234683920A7CDE600D9AC35 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Andres Riofrio";
+				TargetAttributes = {
+					9234684020A7CDE600D9AC35 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					9234685720A7CDE800D9AC35 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 9234684020A7CDE600D9AC35;
+					};
+					9234686220A7CDE800D9AC35 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 9234684020A7CDE600D9AC35;
+					};
+				};
+			};
+			buildConfigurationList = 9234683C20A7CDE600D9AC35 /* Build configuration list for PBXProject "LoCast" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9234683820A7CDE600D9AC35;
+			productRefGroup = 9234684220A7CDE600D9AC35 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9234684020A7CDE600D9AC35 /* LoCast */,
+				9234685720A7CDE800D9AC35 /* LoCastTests */,
+				9234686220A7CDE800D9AC35 /* LoCastUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9234683F20A7CDE600D9AC35 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9234685220A7CDE800D9AC35 /* LaunchScreen.storyboard in Resources */,
+				9234684F20A7CDE800D9AC35 /* Assets.xcassets in Resources */,
+				9234684A20A7CDE600D9AC35 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9234685620A7CDE800D9AC35 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9234686120A7CDE800D9AC35 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9234683D20A7CDE600D9AC35 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9234684720A7CDE600D9AC35 /* ViewController.swift in Sources */,
+				9234684D20A7CDE600D9AC35 /* LoCast.xcdatamodeld in Sources */,
+				9234684520A7CDE600D9AC35 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9234685420A7CDE800D9AC35 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9234685D20A7CDE800D9AC35 /* LoCastTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9234685F20A7CDE800D9AC35 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9234686820A7CDE800D9AC35 /* LoCastUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9234685A20A7CDE800D9AC35 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9234684020A7CDE600D9AC35 /* LoCast */;
+			targetProxy = 9234685920A7CDE800D9AC35 /* PBXContainerItemProxy */;
+		};
+		9234686520A7CDE800D9AC35 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9234684020A7CDE600D9AC35 /* LoCast */;
+			targetProxy = 9234686420A7CDE800D9AC35 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9234684820A7CDE600D9AC35 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9234684920A7CDE600D9AC35 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9234685020A7CDE800D9AC35 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9234685120A7CDE800D9AC35 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9234686A20A7CDE800D9AC35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9234686B20A7CDE800D9AC35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9234686D20A7CDE800D9AC35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LoCast/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.andresriofrio.LoCast;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9234686E20A7CDE800D9AC35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LoCast/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.andresriofrio.LoCast;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9234687020A7CDE800D9AC35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LoCastTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.andresriofrio.LoCastTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LoCast.app/LoCast";
+			};
+			name = Debug;
+		};
+		9234687120A7CDE800D9AC35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LoCastTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.andresriofrio.LoCastTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LoCast.app/LoCast";
+			};
+			name = Release;
+		};
+		9234687320A7CDE800D9AC35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LoCastUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.andresriofrio.LoCastUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LoCast;
+			};
+			name = Debug;
+		};
+		9234687420A7CDE800D9AC35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LoCastUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.andresriofrio.LoCastUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LoCast;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9234683C20A7CDE600D9AC35 /* Build configuration list for PBXProject "LoCast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9234686A20A7CDE800D9AC35 /* Debug */,
+				9234686B20A7CDE800D9AC35 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9234686C20A7CDE800D9AC35 /* Build configuration list for PBXNativeTarget "LoCast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9234686D20A7CDE800D9AC35 /* Debug */,
+				9234686E20A7CDE800D9AC35 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9234686F20A7CDE800D9AC35 /* Build configuration list for PBXNativeTarget "LoCastTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9234687020A7CDE800D9AC35 /* Debug */,
+				9234687120A7CDE800D9AC35 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9234687220A7CDE800D9AC35 /* Build configuration list for PBXNativeTarget "LoCastUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9234687320A7CDE800D9AC35 /* Debug */,
+				9234687420A7CDE800D9AC35 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9234684B20A7CDE600D9AC35 /* LoCast.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9234684C20A7CDE600D9AC35 /* LoCast.xcdatamodel */,
+			);
+			currentVersion = 9234684C20A7CDE600D9AC35 /* LoCast.xcdatamodel */;
+			path = LoCast.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 9234683920A7CDE600D9AC35 /* Project object */;
+}
