@@ -20,6 +20,10 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>When you turn broadcasting on and until you turn it off, your current location will be broadcast under an pseudononymous name to all other LoCast users.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>When you turn broadcasting on and until you turn it off, your current location will be broadcast under an pseudononymous name to all other LoCast users.</string>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>location</string>
@@ -38,10 +42,6 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>When you turn broadcasting on and until you turn it off, your current location will be broadcast under an pseudononymous name to all other LoCast users.</string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>When you turn broadcasting on and until you turn it off, your current location will be broadcast under an pseudononymous name to all other LoCast users.</string>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

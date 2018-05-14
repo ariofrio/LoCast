@@ -59,20 +59,12 @@ class LocationManagerDelegate: NSObject, CLLocationManagerDelegate {
         }
         return false
     }
-        
+    
+    public func resumeUpdatingLocationFromBackground() {
+        startUpdatingLocation()
+    }
+    
     private func startUpdatingLocation() {
-        locationManager.requestAlwaysAuthorization()
-        
-        let authorizationStatus = CLLocationManager.authorizationStatus()
-        if authorizationStatus != .authorizedWhenInUse && authorizationStatus != .authorizedAlways {
-            // User has not authorized access to location information
-            return
-        }
-        if !CLLocationManager.locationServicesEnabled() {
-            // Location services is not available
-            return
-        }
-        
         locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters
         locationManager.distanceFilter = 100.0 // In meters
         locationManager.delegate = self

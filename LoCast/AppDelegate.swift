@@ -16,7 +16,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        print("Hello, launch!")
+        // TODO: Test that this works when the app is automatically suspended or terminated.
+        if launchOptions?[.location] != nil {
+            LocationManagerDelegate.shared.resumeUpdatingLocationFromBackground()
+        }
         
         // Override point for customization after application launch.
         return true
