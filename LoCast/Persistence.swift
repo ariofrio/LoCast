@@ -21,16 +21,17 @@ class Persistence {
     }
     
     func updateUserCoordinate(_ userCoordinate: CLLocationCoordinate2D) {
-        ref.child("coordinates").child(user.uid).setValue(serializeCoordinate(userCoordinate))
+        ref.child("coordinates").child(user.uid).setValue(
+            ["t": ServerValue.timestamp(), "v": serializeCoordinate(userCoordinate)])
     }
     
     func observeUserCoordinatesUpdated(with: @escaping (_ userCoordinates: [String: CLLocationCoordinate2D]) -> ()) {
         ref.child("coordinates").observe(DataEventType.value) { (snapshot) in
-            let dict = snapshot.value as! [String: AnyObject]
-            with(Dictionary(uniqueKeysWithValues:
-                dict.compactMap({ pair in
+            let value = snapshot.value as? [String: AnyObject]
+            let v = value?["v"] as? [String: AnyObject]
+            with(Dictionary(uniqueKeysWithValues: v?.compactMap({ pair in
                     self.deserializeCoordinate(pair.value).flatMap({ coordinate in (pair.key, coordinate) })
-                })
+                }) ?? []
             ))
         }
     }
