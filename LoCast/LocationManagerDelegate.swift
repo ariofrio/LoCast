@@ -11,9 +11,13 @@ import CoreLocation
 import PromiseKit
 
 class LocationManagerDelegate: NSObject, CLLocationManagerDelegate {
-    static let shared = LocationManagerDelegate()
-    
     let locationManager = CLLocationManager()
+    let updateLocationHandler: (CLLocation) -> ()
+    
+    init(updateLocationHandler: @escaping (CLLocation) -> ()) {
+        self.updateLocationHandler = updateLocationHandler
+        super.init()
+    }
     
     func requestStartUpdatingLocation(viewControllerToPresent: UIViewController, inBackground: Bool) -> Guarantee<Bool> {
         let authorizationStatus = CLLocationManager.authorizationStatus()
@@ -73,8 +77,9 @@ class LocationManagerDelegate: NSObject, CLLocationManagerDelegate {
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        let lastLocation = locations.last
-        debugPrint(lastLocation)
+        if let lastLocation = locations.last {
+            self.updateLocationHandler(lastLocation)
+        }
     }
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {

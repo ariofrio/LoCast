@@ -10,17 +10,17 @@ import UIKit
 import PromiseKit
 
 class ViewController: UIViewController {
-
+    var locationManager: LocationManagerDelegate?
+    func inject(locationManager: LocationManagerDelegate) {
+        self.locationManager = locationManager
+    }
+    
     @IBOutlet weak var broadcastSwitch: UISwitch!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-
     @IBAction func changeBroadcastStatus(_ sender: Any) {
         if broadcastSwitch.isOn {
             firstly {
-                LocationManagerDelegate.shared.requestStartUpdatingLocation(
+                self.locationManager!.requestStartUpdatingLocation(
                     viewControllerToPresent: self, inBackground: false)
             }.done { success in
                 if !success {

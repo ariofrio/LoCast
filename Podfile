@@ -7,6 +7,9 @@ target 'LoCast' do
 
   # Pods for LoCast
   pod 'Firebase/Core'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Database'
+  
   pod 'PromiseKit', '~> 6.0'
   pod 'PromiseKit/CoreLocation'
 

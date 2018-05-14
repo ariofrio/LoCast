@@ -9,16 +9,35 @@
 import UIKit
 import CoreData
 import CoreLocation
+import Firebase
+import FirebaseAuth
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
     var window: UIWindow?
+    var user: User?
+    var locationManager: LocationManagerDelegate?
+    var persistence: Persistence?
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // TODO: Test that this works when the app is automatically suspended or terminated.
-        if launchOptions?[.location] != nil {
-            LocationManagerDelegate.shared.resumeUpdatingLocationFromBackground()
+    func application(_ application: UIApplication,
+                     didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        FirebaseApp.configure()
+        
+        Auth.auth().signInAnonymously() { (user, error) in
+            if error != nil {
+                fatalError((error! as NSError).userInfo[NSLocalizedDescriptionKey] as! String)
+            }
+            
+            self.persistence = Persistence(user: user!.user)
+            self.locationManager = LocationManagerDelegate(updateLocationHandler: { location in
+                self.persistence!.updateUserCoordinate(location.coordinate)
+            })
+            (self.window?.rootViewController as! ViewController).inject(locationManager: self.locationManager!)
+            
+            // TODO: Test that this works when the app is automatically suspended or terminated.
+            if launchOptions?[.location] != nil {
+                self.locationManager!.resumeUpdatingLocationFromBackground()
+            }
         }
         
         // Override point for customization after application launch.

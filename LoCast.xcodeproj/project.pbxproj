@@ -19,6 +19,7 @@
 		9234685220A7CDE800D9AC35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9234685020A7CDE800D9AC35 /* LaunchScreen.storyboard */; };
 		9234685D20A7CDE800D9AC35 /* LoCastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9234685C20A7CDE800D9AC35 /* LoCastTests.swift */; };
 		9234686820A7CDE800D9AC35 /* LoCastUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9234686720A7CDE800D9AC35 /* LoCastUITests.swift */; };
+		92BB448620A926ED00B27112 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92BB448520A926ED00B27112 /* Persistence.swift */; };
 		C255B452132DEE32C42CF835 /* Pods_LoCast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D68DADF37235033E82BAFAD /* Pods_LoCast.framework */; };
 		F87D9F09C1D349CE2C7789C4 /* Pods_LoCastTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF69BCEA65C3509501116CF8 /* Pods_LoCastTests.framework */; };
 /* End PBXBuildFile section */
@@ -66,6 +67,7 @@
 		9234686320A7CDE800D9AC35 /* LoCastUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoCastUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9234686720A7CDE800D9AC35 /* LoCastUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoCastUITests.swift; sourceTree = "<group>"; };
 		9234686920A7CDE800D9AC35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92BB448520A926ED00B27112 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		DF69BCEA65C3509501116CF8 /* Pods_LoCastTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoCastTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -145,6 +147,7 @@
 				9234685020A7CDE800D9AC35 /* LaunchScreen.storyboard */,
 				9234685320A7CDE800D9AC35 /* Info.plist */,
 				9234684B20A7CDE600D9AC35 /* LoCast.xcdatamodeld */,
+				92BB448520A926ED00B27112 /* Persistence.swift */,
 			);
 			path = LoCast;
 			sourceTree = "<group>";
@@ -322,14 +325,18 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-LoCast/Pods-LoCast-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -401,6 +408,7 @@
 				9234684720A7CDE600D9AC35 /* ViewController.swift in Sources */,
 				920C9FA620A7F4B90041ED05 /* LocationManagerDelegate.swift in Sources */,
 				9234684D20A7CDE600D9AC35 /* LoCast.xcdatamodeld in Sources */,
+				92BB448620A926ED00B27112 /* Persistence.swift in Sources */,
 				9234684520A7CDE600D9AC35 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -581,7 +589,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.andresriofrio.LoCast;
+				PRODUCT_BUNDLE_IDENTIFIER = com.andresriofrio.locast;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -599,7 +607,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.andresriofrio.LoCast;
+				PRODUCT_BUNDLE_IDENTIFIER = com.andresriofrio.locast;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
