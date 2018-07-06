@@ -56,6 +56,7 @@
                     </view>
                     <connections>
                         <outlet property="broadcastSwitch" destination="Uic-z0-NSr" id="WSb-qb-6gH"/>
+                        <outlet property="locationMap" destination="tSB-WB-zBR" id="TEa-w7-pyX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

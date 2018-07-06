@@ -23,16 +23,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                      didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
         
+        let view = self.window?.rootViewController as! ViewController
+        
         Auth.auth().signInAnonymously() { (user, error) in
             if error != nil {
                 fatalError((error! as NSError).userInfo[NSLocalizedDescriptionKey] as! String)
             }
             
             self.persistence = Persistence(user: user!.user)
+            self.persistence?.observeUserCoordinatesUpdated(with: { (userCoordinates) in
+                view.updateUserCoordinates(userCoordinates)
+            })
             self.locationManager = LocationManagerDelegate(updateLocationHandler: { location in
                 self.persistence!.updateUserCoordinate(location.coordinate)
             })
-            (self.window?.rootViewController as! ViewController).inject(locationManager: self.locationManager!)
+            view.inject(locationManager: self.locationManager!)
+            
             
             // TODO: Test that this works when the app is automatically suspended or terminated.
             if launchOptions?[.location] != nil {

@@ -27,10 +27,12 @@ class Persistence {
     
     func observeUserCoordinatesUpdated(with: @escaping (_ userCoordinates: [String: CLLocationCoordinate2D]) -> ()) {
         ref.child("coordinates").observe(DataEventType.value) { (snapshot) in
-            let value = snapshot.value as? [String: AnyObject]
-            let v = value?["v"] as? [String: AnyObject]
-            with(Dictionary(uniqueKeysWithValues: v?.compactMap({ pair in
-                    self.deserializeCoordinate(pair.value).flatMap({ coordinate in (pair.key, coordinate) })
+            let value = snapshot.value as? [String: NSDictionary]
+            with(Dictionary(uniqueKeysWithValues: value?.compactMap({ pair in
+                    let value = pair.value as? [String: AnyObject]
+                    let v = value?["v"] as? NSDictionary
+                    return v.flatMap({ v in self.deserializeCoordinate(v) })
+                        .flatMap({ coordinate in (pair.key, coordinate) })
                 }) ?? []
             ))
         }

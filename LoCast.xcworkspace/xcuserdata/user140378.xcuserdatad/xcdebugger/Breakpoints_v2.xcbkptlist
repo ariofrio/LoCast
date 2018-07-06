@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LoCast/LocationManagerDelegate.swift"
-            timestampString = "547965413.144366"
+            timestampString = "552524709.7220221"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "42"
@@ -81,6 +81,86 @@
             endingLineNumber = "156"
             landmarkName = "unknown"
             landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LoCast/ViewController.swift"
+            timestampString = "552524746.66424"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "updateUserCoordinates(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LoCast/Persistence.swift"
+            timestampString = "552525913.792264"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LoCast/Persistence.swift"
+            timestampString = "552525913.792593"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__ObjC.DataSnapshot) -&gt; () in LoCast.Persistence.observeUserCoordinatesUpdated(with: (Swift.Dictionary&lt;Swift.String, __C.CLLocationCoordinate2D&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "LoCast"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user140378/Desktop/LoCast/LoCast/Persistence.swift"
+                  timestampString = "552525131.481575"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "951">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 ((key: Swift.String, value: Swift.AnyObject)) -&gt; Swift.Optional&lt;(Swift.String, __C.CLLocationCoordinate2D)&gt; in closure #1 (__ObjC.DataSnapshot) -&gt; () in LoCast.Persistence.observeUserCoordinatesUpdated(with: (Swift.Dictionary&lt;Swift.String, __C.CLLocationCoordinate2D&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "LoCast"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user140378/Desktop/LoCast/LoCast/Persistence.swift"
+                  timestampString = "552525131.484409"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "41">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
